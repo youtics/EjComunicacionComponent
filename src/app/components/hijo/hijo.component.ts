@@ -9,7 +9,7 @@ export class HijoComponent implements OnInit {
 
   @Input() nombreHijo:string = 'sin nombre';
   @Input() lista:number[] = [10,20,30,40];
-  facundo:string='Facundo Chaldu';
+  
 
   constructor() { }
 
