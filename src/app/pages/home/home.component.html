@@ -1,0 +1,20 @@
+<h1>Home component</h1>
+<hr>
+<h3>{{ nombre }}</h3>
+<h4>{{listaNumeros}}</h4>
+<hr>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Numero</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lista of listaNumeros; let i = index ">
+        <td>{{lista}}</td>
+      </tr>
+    </tbody>
+</table>
+<button class="btn btn-primary" (click)="cambiarNombre()">Cambiar Nombre</button>
+<hr>
+<app-hijos [nombreHijo] = "nombre" [lista] = "listaNumeros" ></app-hijos>
