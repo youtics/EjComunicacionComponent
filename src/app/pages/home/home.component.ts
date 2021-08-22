@@ -18,4 +18,9 @@ export class HomeComponent implements OnInit {
   {
     return this.nombre = 'Gabriel Chaldu'
   }
+
+  agregarNumero()
+  {
+    this.listaNumeros.push(6);
+  }
 }
